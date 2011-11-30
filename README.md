@@ -27,3 +27,6 @@ Given we have a defined enum, we can perform things like this:
 	[ActivtyEnum.CYCLING numberOfCaloriesAfterTime:125];
 
 
+## Defining Enums
+
+Please take a look at ActivityEnum.h and ActivityEnum.m in the example project.
