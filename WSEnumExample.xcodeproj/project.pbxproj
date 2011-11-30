@@ -21,6 +21,8 @@
 		7171EB431484AA7E00AF2FE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7171EB211484AA7D00AF2FE3 /* Foundation.framework */; };
 		7171EB4B1484AA7E00AF2FE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7171EB491484AA7E00AF2FE3 /* InfoPlist.strings */; };
 		7171EB4E1484AA7E00AF2FE3 /* WSEnumExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7171EB4D1484AA7E00AF2FE3 /* WSEnumExampleTests.m */; };
+		7171EB5F1484AAA900AF2FE3 /* WSEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 7171EB5E1484AAA900AF2FE3 /* WSEnum.m */; };
+		7171EB621484AB9600AF2FE3 /* ActivityEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 7171EB611484AB9600AF2FE3 /* ActivityEnum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +40,26 @@
 		7171EB1F1484AA7D00AF2FE3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7171EB211484AA7D00AF2FE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7171EB231484AA7D00AF2FE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7171EB271484AA7D00AF2FE3 /* WSEnumExample-Info.plist */ = {isa = PBXFileReference; path = "WSEnumExample-Info.plist"; sourceTree = "<group>"; };
+		7171EB271484AA7D00AF2FE3 /* WSEnumExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WSEnumExample-Info.plist"; sourceTree = "<group>"; };
 		7171EB291484AA7D00AF2FE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7171EB2B1484AA7D00AF2FE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7171EB2D1484AA7D00AF2FE3 /* WSEnumExample-Prefix.pch */ = {isa = PBXFileReference; path = "WSEnumExample-Prefix.pch"; sourceTree = "<group>"; };
-		7171EB2E1484AA7D00AF2FE3 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		7171EB2D1484AA7D00AF2FE3 /* WSEnumExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WSEnumExample-Prefix.pch"; sourceTree = "<group>"; };
+		7171EB2E1484AA7D00AF2FE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7171EB2F1484AA7D00AF2FE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7171EB311484AA7D00AF2FE3 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		7171EB311484AA7D00AF2FE3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7171EB321484AA7D00AF2FE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7171EB351484AA7D00AF2FE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		7171EB381484AA7D00AF2FE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		7171EB3F1484AA7E00AF2FE3 /* WSEnumExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSEnumExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7171EB401484AA7E00AF2FE3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7171EB481484AA7E00AF2FE3 /* WSEnumExampleTests-Info.plist */ = {isa = PBXFileReference; path = "WSEnumExampleTests-Info.plist"; sourceTree = "<group>"; };
+		7171EB481484AA7E00AF2FE3 /* WSEnumExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WSEnumExampleTests-Info.plist"; sourceTree = "<group>"; };
 		7171EB4A1484AA7E00AF2FE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7171EB4C1484AA7E00AF2FE3 /* WSEnumExampleTests.h */ = {isa = PBXFileReference; path = WSEnumExampleTests.h; sourceTree = "<group>"; };
+		7171EB4C1484AA7E00AF2FE3 /* WSEnumExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSEnumExampleTests.h; sourceTree = "<group>"; };
 		7171EB4D1484AA7E00AF2FE3 /* WSEnumExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSEnumExampleTests.m; sourceTree = "<group>"; };
+		7171EB5D1484AAA900AF2FE3 /* WSEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSEnum.h; sourceTree = "<group>"; };
+		7171EB5E1484AAA900AF2FE3 /* WSEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSEnum.m; sourceTree = "<group>"; };
+		7171EB601484AB9600AF2FE3 /* ActivityEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityEnum.h; sourceTree = "<group>"; };
+		7171EB611484AB9600AF2FE3 /* ActivityEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityEnum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		7171EB101484AA7D00AF2FE3 = {
 			isa = PBXGroup;
 			children = (
+				7171EB5B1484AA8B00AF2FE3 /* WSEnum */,
 				7171EB251484AA7D00AF2FE3 /* WSEnumExample */,
 				7171EB461484AA7E00AF2FE3 /* WSEnumExampleTests */,
 				7171EB1E1484AA7D00AF2FE3 /* Frameworks */,
@@ -120,6 +127,8 @@
 				7171EB341484AA7D00AF2FE3 /* ViewController_iPhone.xib */,
 				7171EB371484AA7D00AF2FE3 /* ViewController_iPad.xib */,
 				7171EB261484AA7D00AF2FE3 /* Supporting Files */,
+				7171EB601484AB9600AF2FE3 /* ActivityEnum.h */,
+				7171EB611484AB9600AF2FE3 /* ActivityEnum.m */,
 			);
 			path = WSEnumExample;
 			sourceTree = "<group>";
@@ -152,6 +161,16 @@
 				7171EB491484AA7E00AF2FE3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7171EB5B1484AA8B00AF2FE3 /* WSEnum */ = {
+			isa = PBXGroup;
+			children = (
+				7171EB5D1484AAA900AF2FE3 /* WSEnum.h */,
+				7171EB5E1484AAA900AF2FE3 /* WSEnum.m */,
+			);
+			name = WSEnum;
+			path = WSEum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +283,8 @@
 				7171EB2C1484AA7D00AF2FE3 /* main.m in Sources */,
 				7171EB301484AA7D00AF2FE3 /* AppDelegate.m in Sources */,
 				7171EB331484AA7D00AF2FE3 /* ViewController.m in Sources */,
+				7171EB5F1484AAA900AF2FE3 /* WSEnum.m in Sources */,
+				7171EB621484AB9600AF2FE3 /* ActivityEnum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +462,7 @@
 				7171EB531484AA7E00AF2FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7171EB541484AA7E00AF2FE3 /* Build configuration list for PBXNativeTarget "WSEnumExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +471,7 @@
 				7171EB561484AA7E00AF2FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

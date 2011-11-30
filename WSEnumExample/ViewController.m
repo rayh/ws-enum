@@ -3,52 +3,51 @@
 //  WSEnumExample
 //
 //  Created by Ray Hilton on 29/11/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Wirestorm Pty Ltd. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "ActivityEnum.h"
+
+@interface ViewController ()
+@property (nonatomic, assign) ActivityEnum *activty;
+@property (nonatomic, assign) NSInteger timeTaken;
+- (void)tick;
+@end
 
 @implementation ViewController
+@synthesize activty=activty_;
+@synthesize outputLabel=outputLabel_;
+@synthesize transportLabel=transportLabel_;
+@synthesize segmentedControl=segmentedControl_;
+@synthesize timeTakenLabel=timeTakenLabel_;
+@synthesize timeTaken=timeTaken_;
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.activty = [ActivityEnum enumWithOrdinal:0];
+    self.transportLabel.text = self.activty.name;
+    self.timeTaken = 150;
+    
+    for(ActivityEnum *value in [ActivityEnum enumValues]) {
+        NSLog(@"Got enum value %@ with name %@ and ordinal %d", value, value.name, value.ordinal);
+        [self.segmentedControl setTitle:value.name forSegmentAtIndex:value.ordinal];
+    }
+    
+//    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(tick) userInfo:nil repeats:YES];
+    [self tick];
 }
 
-- (void)viewDidUnload
+- (void)tick
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
+    self.timeTakenLabel.text = [NSString stringWithFormat:@"%ds", self.timeTaken];
+    self.outputLabel.text = [NSString stringWithFormat:@"%0.3f",[self.activty numberOfCaloriesAfterTime:self.timeTaken]];
+//    self.timeTaken++;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -59,6 +58,14 @@
     } else {
         return YES;
     }
+}
+
+- (IBAction)transportModeChanged:(UISegmentedControl*)sender
+{
+    self.activty = [ActivityEnum enumWithOrdinal:sender.selectedSegmentIndex];
+    self.transportLabel.text = self.activty.name;
+//    self.timeTaken = 0;
+    [self tick];
 }
 
 @end

@@ -3,7 +3,7 @@
 //  WSEnumExample
 //
 //  Created by Ray Hilton on 29/11/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Wirestorm Pty Ltd. All rights reserved.
 //
 
 #import "AppDelegate.h"
