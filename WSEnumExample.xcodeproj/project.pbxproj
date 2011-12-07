@@ -169,8 +169,7 @@
 				7171EB5D1484AAA900AF2FE3 /* WSEnum.h */,
 				7171EB5E1484AAA900AF2FE3 /* WSEnum.m */,
 			);
-			name = WSEnum;
-			path = WSEum;
+			path = WSEnum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
