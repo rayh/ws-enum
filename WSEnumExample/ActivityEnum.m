@@ -9,9 +9,6 @@
 #import "ActivityEnum.h"
 
 
-@interface RunningActivityEnum : ActivityEnum @end
-@interface WalkingActivityEnum : ActivityEnum @end
-@interface CyclingActivityEnum : ActivityEnum @end
 
 @implementation ActivityEnum
 WS_ENUM(CyclingActivityEnum, CYCLING)

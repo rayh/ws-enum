@@ -9,6 +9,19 @@
 #import "ViewController.h"
 #import "ActivityEnum.h"
 
+@implementation ActivityEnum (ViewController)
+- (BOOL)shouldIDoSomething {
+    return NO;
+}
+@end
+
+@implementation RunningActivityEnum (ViewController)
+- (BOOL)shouldIDoSomething {
+    return YES;
+}
+
+@end
+
 @interface ViewController ()
 @property (nonatomic, assign) ActivityEnum *activty;
 @property (nonatomic, assign) NSInteger timeTaken;
@@ -45,6 +58,9 @@
 
 - (void)tick
 {
+    if([self.activty shouldIDoSomething])
+        [self doSomething];
+    
     self.timeTakenLabel.text = [NSString stringWithFormat:@"%ds", self.timeTaken];
     self.outputLabel.text = [NSString stringWithFormat:@"%0.3f",[self.activty numberOfCaloriesAfterTime:self.timeTaken]];
 //    self.timeTaken++;

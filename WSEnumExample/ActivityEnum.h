@@ -16,3 +16,8 @@
 
 - (CGFloat)numberOfCaloriesAfterTime:(NSTimeInterval)timeInterval;
 @end
+
+
+@interface RunningActivityEnum : ActivityEnum @end
+@interface WalkingActivityEnum : ActivityEnum @end
+@interface CyclingActivityEnum : ActivityEnum @end
